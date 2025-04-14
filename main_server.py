@@ -24,7 +24,7 @@ def deep_web_search(query: str) -> str:
 
 @mcp.tool()
 async def CrewAI_RAG(query: str) -> str:
-    """Use a simple RAG workflow to answer queries using documents from data directory about Deep Seek"""
+    ""
     response = await rag_workflow.query(query)
     return str(response)
 
